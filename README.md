@@ -4,7 +4,12 @@ The personal portfolio of **Siddhant Bhasin** (Sid), a software engineer working
 
 It isn't a CV with a scroll bar. It tells the story of the move from Delhi to Newcastle as one long metro ride: a first C++ program on a school PC, a line map of every job, a day one in Newcastle, a train that stops at each of my best projects, and a Students' Union noticeboard full of side projects.
 
-![Hero](docs/screenshots/01-hero.jpg)
+**Live: [siddhantbhasin.me](https://siddhantbhasin.me)**
+
+<p align="center">
+  <a href="docs/site-tour.mp4"><img src="docs/site-tour.gif" alt="A scroll through the site: the hero, the school PC compiling, the journey line map, the train pulling into a station, and the noticeboard" width="100%" /></a>
+</p>
+<p align="center"><a href="docs/site-tour.mp4">Watch the full 50 second tour (MP4)</a></p>
 
 ---
 

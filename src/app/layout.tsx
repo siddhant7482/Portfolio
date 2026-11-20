@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Permanent_Marker, Caveat, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const marker = Permanent_Marker({ weight: "400", subsets: ["latin"], variable: "--nf-marker" });
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body className={`${marker.variable} ${hand.variable} ${grotesk.variable} ${mono.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );

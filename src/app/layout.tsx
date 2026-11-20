@@ -7,9 +7,24 @@ const hand = Caveat({ subsets: ["latin"], variable: "--nf-hand" });
 const grotesk = Space_Grotesk({ subsets: ["latin"], variable: "--nf-grotesk" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--nf-mono" });
 
+const title = "Sid · Siddhant Bhasin";
+const description = "Software engineer building LLM systems. Delhi to Newcastle as a metro ride: scroll to drive the train, every station is something I've built.";
+
 export const metadata: Metadata = {
-  title: "Sid · Siddhant Bhasin",
-  description: "Software Engineer (AI/ML, LLM systems). Delhi to Newcastle, one stop at a time.",
+  metadataBase: new URL("https://siddhantbhasin.me"),
+  title,
+  description,
+  alternates: { canonical: "/" },
+  // Link previews (LinkedIn, WhatsApp, Slack, X). The images are src/app/opengraph-image.jpg and twitter-image.jpg.
+  openGraph: {
+    type: "website",
+    url: "https://siddhantbhasin.me",
+    siteName: "Siddhant Bhasin",
+    title,
+    description,
+    locale: "en_GB",
+  },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
